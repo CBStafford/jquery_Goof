@@ -26,8 +26,14 @@
 
       <div class="section login_div">
         <form id="myForm" method="POST" >
-          Email:    <input class="login_field" type="text" name="email"><br>
-          Password: <input class="login_field" type="text" name="password"><br><br>
+          <div class="row">
+            <div class="labelDiv col-sm-1">Email:</div>
+            <div class="inputDiv col-sm-10"><input class="login_field" type="text" name="email"></div>
+          </div>
+          <div class="row">
+            <div class="labelDiv col-sm-1">Password:</div>
+            <div class="inputDiv col-sm-10"><input class="login_field" type="text" name="password"></div>
+          </div>
         </form>
 
         <button id="login" class="btn btn-primary" onClick="login()">Login</button>
